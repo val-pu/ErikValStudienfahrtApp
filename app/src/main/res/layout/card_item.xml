@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/image">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:elevation="10dp"
@@ -50,7 +50,7 @@
             android:layout_height="0dp"
             android:contentDescription="TODO"
             android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -119,7 +119,7 @@
             app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/url"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="www.nellysachs.de"
@@ -137,10 +137,10 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/ort"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eichendorfstrasse 2+"
+            android:text="ort"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
