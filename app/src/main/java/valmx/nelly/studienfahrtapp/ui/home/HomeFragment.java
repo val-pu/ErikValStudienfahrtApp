@@ -43,9 +43,9 @@ public class HomeFragment extends Fragment {
 
         LinkedList<Card> cards = new LinkedList<>();
 
-        cards.add(new Card("Museum","Dresden, HausAllee","16:00 - 17:40",1 + "","Museum", true));
-        cards.add(new Card("Freizeit","Dresden, HausAllee","17:40 - 19:00",1 + "","Freizeit", false));
-        cards.add(new Card("Museum","Dresden, HausAllee","20:00 - 21:00",1 + "","Abendessen", false));
+        cards.add(new Card("Museum","Dresden, HausAllee","16:00 - 17:40",1 + "","Museum", true,null));
+        cards.add(new Card("Freizeit","Dresden, HausAllee","17:40 - 19:00",1 + "","Freizeit", false,null));
+        cards.add(new Card("Museum","Dresden, HausAllee","20:00 - 21:00",1 + "","Abendessen", false,null));
 
         recyclerView.setAdapter(new HomeItemAdapter(cards,LayoutInflater.from(root.getContext())));
 
