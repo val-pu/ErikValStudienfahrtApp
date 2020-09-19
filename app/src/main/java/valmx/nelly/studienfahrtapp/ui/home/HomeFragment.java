@@ -1,5 +1,6 @@
 package valmx.nelly.studienfahrtapp.ui.home;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +43,9 @@ public class HomeFragment extends Fragment {
 
         LinkedList<Card> cards = new LinkedList<>();
 
-        cards.add(new Card("Museum","Dresden, HausAllee","1",1 + "","Museum"));
-        cards.add(new Card("Museum","Dresden, HausAllee","1",1 + "","Museum"));
-        cards.add(new Card("Museum","Dresden, HausAllee","1",1 + "","Museum"));
+        cards.add(new Card("Museum","Dresden, HausAllee","16:00 - 17:40",1 + "","Museum", true));
+        cards.add(new Card("Freizeit","Dresden, HausAllee","17:40 - 19:00",1 + "","Freizeit", false));
+        cards.add(new Card("Museum","Dresden, HausAllee","20:00 - 21:00",1 + "","Abendessen", false));
 
         recyclerView.setAdapter(new HomeItemAdapter(cards,LayoutInflater.from(root.getContext())));
 

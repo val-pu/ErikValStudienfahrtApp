@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
+    android:layout_margin="0dp"
     android:background="@color/important_accent">
 
     <ImageView
@@ -30,7 +30,7 @@
         android:background="#C33333"
         android:elevation="10.1dp"
         android:padding="5dp"
-        android:text="Announcement"
+        android:text="Benachrichtigung"
         android:textColor="@color/textcolor_light"
         android:textSize="24sp"
         android:textStyle="bold"
