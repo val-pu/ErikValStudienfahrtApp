@@ -30,7 +30,7 @@ class HomeItemAdapter(private val data: List<Card>, val inflater: LayoutInflater
 
         c.url.text = data.url
         c.ort.text = data.ort
-        c.time.text = data.time
+//        c.time.text = data.time
         c.title.text = data.title
         // TODO: 18.09.2020 RESTLICHE TEXTTYPEN IMPLEMENTIEREN
     }
@@ -41,7 +41,7 @@ class HomeItemAdapter(private val data: List<Card>, val inflater: LayoutInflater
 
         internal var url: TextView = itemView.findViewById(R.id.url)
         internal var ort: TextView = itemView.findViewById(R.id.ort)
-        internal var time: TextView = itemView.findViewById(R.id.time)
+//        internal var time: TextView = itemView.findViewById(R.id.time)
         internal lateinit var desc: TextView
         internal var title: TextView = itemView.findViewById(R.id.title)
     }

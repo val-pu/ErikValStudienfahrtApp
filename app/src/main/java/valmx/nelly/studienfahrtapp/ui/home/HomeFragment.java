@@ -11,8 +11,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.LinkedList;
 
 import valmx.nelly.studienfahrtapp.R;
+import valmx.nelly.studienfahrtapp.containers.Card;
 
 public class HomeFragment extends Fragment {
 
@@ -30,6 +35,19 @@ public class HomeFragment extends Fragment {
 //                textView.setText(s);
 //            }
 //        });
+
+        RecyclerView recyclerView = root.findViewById(R.id.mainCards);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(root.getContext()));
+
+        LinkedList<Card> cards = new LinkedList<>();
+
+        cards.add(new Card("Museum","Dresden, HausAllee","1",1 + "","Museum"));
+        cards.add(new Card("Museum","Dresden, HausAllee","1",1 + "","Museum"));
+        cards.add(new Card("Museum","Dresden, HausAllee","1",1 + "","Museum"));
+
+        recyclerView.setAdapter(new HomeItemAdapter(cards,LayoutInflater.from(root.getContext())));
+
         return root;
     }
 }
