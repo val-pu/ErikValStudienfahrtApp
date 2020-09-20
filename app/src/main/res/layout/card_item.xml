@@ -20,7 +20,7 @@
         android:visibility="gone"
         android:maxHeight="190dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_home_black_24dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout

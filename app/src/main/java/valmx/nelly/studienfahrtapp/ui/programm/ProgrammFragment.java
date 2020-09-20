@@ -1,4 +1,4 @@
-package valmx.nelly.studienfahrtapp.ui.dashboard;
+package valmx.nelly.studienfahrtapp.ui.programm;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import valmx.nelly.studienfahrtapp.R;
 
-public class DashboardFragment extends Fragment {
+public class ProgrammFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
 
@@ -23,13 +23,7 @@ public class DashboardFragment extends Fragment {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

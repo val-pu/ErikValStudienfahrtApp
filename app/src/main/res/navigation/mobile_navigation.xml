@@ -9,11 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="valmx.nelly.studienfahrtapp.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_programm" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="valmx.nelly.studienfahrtapp.ui.dashboard.DashboardFragment"
+        android:name="valmx.nelly.studienfahrtapp.ui.programm.ProgrammFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 

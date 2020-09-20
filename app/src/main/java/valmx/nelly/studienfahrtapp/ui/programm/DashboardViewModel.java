@@ -1,4 +1,4 @@
-package valmx.nelly.studienfahrtapp.ui.dashboard;
+package valmx.nelly.studienfahrtapp.ui.programm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
