@@ -19,7 +19,7 @@
         -->
 
         <activity
-            android:name=".ui.home.CardItem"
+            android:name=".ui.home.CardItem"W
             android:label="@string/title_activity_card_item"></activity>
         <activity
             android:name=".MainActivity"
