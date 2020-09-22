@@ -1,6 +1,9 @@
 package valmx.nelly.studienfahrtapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -10,11 +13,38 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import valmx.nelly.studienfahrtapp.activities.fahrtenpicker.FahrtenPicker;
+import valmx.nelly.studienfahrtapp.data.DataManager;
+
 public class MainActivity extends AppCompatActivity {
+
+    private static DataManager dataManager;
+
+    public MainActivity() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (dataManager == null)
+            dataManager = new DataManager(this);
+
+        if (!dataManager.isTripLoaded()) {
+            setContentView(R.layout.nicht_eingerichtet);
+            Button b = findViewById(R.id.button);
+
+            b.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dataManager.setTripLoaded(true);
+                    Intent intent = new Intent(MainActivity.this, FahrtenPicker.class);
+                    startActivity(intent);
+                }
+            });
+
+            return;
+        }
+
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
