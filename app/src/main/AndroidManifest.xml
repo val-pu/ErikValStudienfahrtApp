@@ -10,10 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
             android:name=".ui.home.CardItem"
             android:label="@string/title_activity_card_item" />
+        <activity
+            android:name=".activities.fahrtenpicker.FahrtenPicker"
+            android:label="Fahrten" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">

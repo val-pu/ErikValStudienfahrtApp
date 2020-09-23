@@ -11,4 +11,6 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="benachrichtigungen">Benachrichtigungen</string>
     <string name="programm">Programm</string>
+    <string name="q1">Q1</string>
+    <string name="fahrtenpicker_title">Fahrtenpicker - wählen sie eine Fahrt aus</string>
 </resources>
