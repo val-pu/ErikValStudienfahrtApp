@@ -19,8 +19,8 @@
         android:cropToPadding="false"
         android:visibility="gone"
         android:maxHeight="190dp"
+        android:src="@drawable/building_4885833_960_720"
         android:scaleType="centerCrop"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
