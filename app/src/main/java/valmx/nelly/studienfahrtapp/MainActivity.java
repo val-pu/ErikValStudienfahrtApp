@@ -14,6 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import valmx.nelly.studienfahrtapp.activities.fahrtenpicker.FahrtenPicker;
+import valmx.nelly.studienfahrtapp.activities.lehrerlogin.LehrerLogInActivity;
 import valmx.nelly.studienfahrtapp.data.DataManager;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         if (!dataManager.isTripLoaded()) {
             setContentView(R.layout.nicht_eingerichtet);
             Button b = findViewById(R.id.button);
+
+            findViewById(R.id.buttonlehrer).setOnClickListener(l -> {
+                Intent intent = new Intent(MainActivity.this, LehrerLogInActivity.class);
+                startActivity(intent);
+            });
+
 
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
