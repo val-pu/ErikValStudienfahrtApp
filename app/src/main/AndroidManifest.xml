@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.lehrerlogin.LehrerHomeActivity"></activity>
+        <activity android:name=".activities.lehrerlogin.create.LehrerCreateActivity"></activity>
+        <activity android:name=".activities.lehrerlogin.LehrerHomeActivity" />
         <activity android:name=".activities.lehrerlogin.LehrerLogInActivity" />
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld

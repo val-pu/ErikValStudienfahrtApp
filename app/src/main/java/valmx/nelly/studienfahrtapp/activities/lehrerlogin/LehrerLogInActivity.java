@@ -13,10 +13,10 @@ import valmx.nelly.studienfahrtapp.R;
 
 public class LehrerLogInActivity extends AppCompatActivity {
 
-    EditText ePasswort;
-    Button loginButton;
+    private EditText ePasswort;
+    private Button loginButton;
 
-    String sPasswort = "1111";
+    private String sPasswort = "1111";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
