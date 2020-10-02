@@ -18,7 +18,6 @@ public class LehrerLogInActivity extends AppCompatActivity {
 
     String sPasswort = "1111";
 
-    boolean isValid = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,18 +29,15 @@ public class LehrerLogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String inPasswort =  ePasswort.getText().toString();
-
-                if (inPasswort.isEmpty())
-                {
+                String inPasswort = ePasswort.getText().toString();
+                if (inPasswort.isEmpty()) {
                     Toast.makeText(LehrerLogInActivity.this, "Trage bitte etwas ein!", Toast.LENGTH_SHORT).show();
-                }else{
-                    isValid = validate(sPasswort);
+                } else {
 
-                    if (isValid){
+                    if (!validate(sPasswort)) {
                         Toast.makeText(LehrerLogInActivity.this, "Falsches Passwort!", Toast.LENGTH_SHORT).show();
 
-                    }else {
+                    } else {
                         Toast.makeText(LehrerLogInActivity.this, "Richtiges Passwort!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(LehrerLogInActivity.this, LehrerHomeActivity.class);
                         startActivity(intent);
@@ -51,10 +47,8 @@ public class LehrerLogInActivity extends AppCompatActivity {
             }
         });
     }
-        private boolean validate(String sPasswort){
-    if (sPasswort.equals(ePasswort)) {
-        return true;
+
+    private boolean validate(String sPasswort) {
+        return sPasswort.equals(ePasswort.getText().toString());
     }
-    return false;
-      }
 }
